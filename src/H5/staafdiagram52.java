@@ -1,13 +1,19 @@
+package H5;
+
 import java.applet.Applet;
 import java.awt.*;
 
-public class Staafdiagram extends Applet {
-
+public class staafdiagram52 extends Applet {
+    int Valerie;
+    int Jeroen;
+    int Hans;
     public void init() {
-
+        Valerie = 40;
+        Jeroen = 120;
+        Hans = 80;
     }
+    public void paint(Graphics g){
 
-    public void paint(Graphics g) {
         g.drawRect(100, 100, 170, 160);
         g.drawLine(100, 100, 80, 100);
         g.drawLine(100, 120, 80, 120);
@@ -20,13 +26,13 @@ public class Staafdiagram extends Applet {
         g.drawLine(100, 260, 80, 260);
         g.setColor(Color.green);
         g.drawString("Jeroen", 100, 280);
-        g.fillRect(101, 160, 50, 100);
+        g.fillRect(101, 260-Jeroen, 50, Jeroen);
         g.setColor(Color.red);
         g.drawString("Hans", 165, 280);
-        g.fillRect(160, 180, 50, 80);
+        g.fillRect(160, 260-Hans, 50, Hans);
         g.setColor(Color.blue);
         g.drawString("Valerie", 220, 280);
-        g.fillRect(220, 220, 50, 40);
+        g.fillRect(220, 260-Valerie, 50, Valerie);
         g.setColor(Color.black);
         g.drawString("160", 65, 100);
         g.drawString("140", 65, 120);
@@ -37,6 +43,5 @@ public class Staafdiagram extends Applet {
         g.drawString("40", 65, 220);
         g.drawString("20", 65, 240);
         g.drawString("0", 65, 260);
-
     }
 }

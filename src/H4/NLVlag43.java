@@ -1,7 +1,9 @@
+package H4;
+
 import java.applet.Applet;
 import java.awt.*;
 
-public class NLVlag extends Applet {
+public class NLVlag43 extends Applet {
     @Override
     public void init() {
     }
