@@ -21,7 +21,7 @@ public class Applet83 extends Applet {
     }
 
 
-    class OkKnopListener implements ActionListener {
+    public class OkKnopListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
             String invoer = tv1.getText();
